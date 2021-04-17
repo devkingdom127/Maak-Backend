@@ -12,6 +12,7 @@ class Config(object):
     TESTING = False
     ENV = 'development'
     SECRET_KEY = os.getenv('SECRET_KEY', 'xxxx')
+    PORT = os.getenv('PORT') or 2000
 
 
 class DevelopmentConfig(Config):
